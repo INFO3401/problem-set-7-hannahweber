@@ -51,3 +51,7 @@ def computeLengthByParty(databaseName):
     # Outputs: The average speech length for presidents of each 
     #          of the two major political parties.
     return 0
+
+####################################################
+# Wednesday's Work
+####################################################
