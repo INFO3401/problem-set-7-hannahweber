@@ -269,15 +269,15 @@ def searchJSON(JSONfile, word):
 #worked with Taylor and Marissa and Jacob
 ################################################################################
 
-#import sqlite3
+import sqlite3
 
 #set up a connection to the database
-#conn = sqlite3.connect('presidents_speech.db')
-#c = conn.cursor()
+conn = sqlite3.connect('presidents_speech.db')
+c = conn.cursor()
 
 #ask the connection to execute a SQL statement
-#c.execute('''CREATE TABLE wordCounts (filename, word, counts)''')
-#c.execute('''CREATE TABLE presidentInformation (index, number, start, end, president_name, prior_occupation, party, VP)''')
+c.execute('''CREATE TABLE wordCounts(filename, word, counts)''')
+c.execute('''CREATE TABLE presidentInformation(index, number, start, end, president_name, prior_occupation, party, VP)''')
 
 #the tables could be joined on president name or year of their presidency 
 # Table 1 - wordCounts
@@ -295,7 +295,7 @@ def searchJSON(JSONfile, word):
     #text VP
     
 #save the changes
-#conn.commit()
+c.commit()
 
 #close the connection
-#conn.close()
+c.close()

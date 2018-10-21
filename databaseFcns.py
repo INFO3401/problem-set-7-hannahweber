@@ -15,9 +15,9 @@ import parsers.py
 
 ####################################################
 # Part 1
+# https://teamtreehouse.com/library/adding-multiple-rows-to-a-table
 ####################################################
 
-def populateDatabase(databaseName, wordCounts, metaData):
     # Write a function that will populate your database
     # with the contents of the word counts and us_presidents.csv
     # to your database. 
@@ -27,6 +27,11 @@ def populateDatabase(databaseName, wordCounts, metaData):
     #         A metadata file containing a dictionary of data
     #         extracted from a supplemental file
     # Outputs: None
+
+def populateDatabase(databaseName, wordCounts, metaData):
+    INSERT INTO wordCounts(filename, word, counts)
+    VALUES ()
+    
     return 0
 
 # Test your code here
@@ -51,7 +56,3 @@ def computeLengthByParty(databaseName):
     # Outputs: The average speech length for presidents of each 
     #          of the two major political parties.
     return 0
-
-####################################################
-# Wednesday's Work
-####################################################
