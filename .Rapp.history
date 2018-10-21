@@ -1,0 +1,71 @@
+Friday Problem
+source("Friday Problem.r")
+source("Friday_Problem.r")
+source("friday_problem.r")
+demo()
+help()
+source("/var/folders/lg/pcnt4yrx1z75m48n51d9dbm40000gn/T//RtmpvRgYPC/filef2950659c38")#
+unlink("/var/folders/lg/pcnt4yrx1z75m48n51d9dbm40000gn/T//RtmpvRgYPC/filef2950659c38")
+source("/Users/hannahweber/Dropbox/problem-set-7-hannahweber/Friday_Problem.R")
+read.csv(file="titanic.csv", head=TRUE, sep=",")
+pwd
+getwd
+getwd()
+setwd(Dropbox/problem-set-7-hannahweber)
+setwd(~/Dropbox/problem-set-7-hannahweber)
+setwd(/Users/hannahweber/Dropbox/problem-set-7-hannahweber)
+setwd(Users/hannahweber/Dropbox/problem-set-7-hannahweber)
+setwd("Users/hannahweber/Dropbox/problem-set-7-hannahweber")
+setwd("/Users/hannahweber/Dropbox/problem-set-7-hannahweber")
+getwd()
+read.csv(file="titanic.csv", head=TRUE, sep=",")
+R = read.csv(file="titanic.csv", head=TRUE, sep=",")
+print(R)
+summary(R)
+names(R)
+R$"PassengerId"
+R$"PassengerId", "Survived"
+R$"Survived"
+table(R$"Sex")
+names(R)#
+R$"PassengerId"#
+R$"Survived"#
+table(R$"Sex")
+sex_table = table(R$"Sex")#
+print(sex_table)
+prop.table("sex_table")
+prop.table(sex_table)
+table(sex_table$female, sex_table$male)
+table(sex_table$"female", sex_table$"male")
+sex_prop = prop.table(sex_table)
+table(sex_prop$"female", sex_prop$"male")
+sex_prop = prop.table(sex_table)
+print(sex_prop)
+table(R$"Sex", R$"Survived")
+prop.table(table(R$"Sex", R$"Survived"))
+sex_survive_prop = prop.table(table(R$"Sex", R$"Survived"))
+print(sex_survive_prop)
+R$"Age"<-0
+R$"Age"
+names(R)
+R$"Age"
+R$Age
+setwd("/Users/hannahweber/Dropbox/problem-set-7-hannahweber")
+R = read.csv(file="titanic.csv", head=TRUE, sep=",")
+R$"Age"
+R$"Child"<-0
+R$"Child"[R$"Age"<18]<-1
+R$"Child"
+sex_survive_prop = prop.table(table(R$"Sex", R$"Survived"))
+aggregate(sex_survive_prop, FUN=mean)
+aggregate("Sex", by= "Survived", data=R, FUN=mean)
+aggregate(R, by= (Sex, Survived), FUN=mean)
+aggregate(R, by= (Sex, Survived), FUN=mean))
+aggregate(R, by= list(Sex, Survived), FUN=mean))
+aggregate(R, by= list(Sex, Survived), FUN=mean)
+aggregate(R, by= list("Sex", "Survived"), FUN=mean)
+aggregate(R, by= list("Sex", "Survived"), FUN="mean")
+aggregate(R, by= list(R$"Sex", R$"Survived"), FUN="mean")
+warnings()
+aggregate(R, by= list(R$"Child", R$"Survived"), FUN="mean")
+R$"Avg_Sex_Survive" <- aggregate(R, by= list(R$"Sex", R$"Survived"), FUN="mean")
